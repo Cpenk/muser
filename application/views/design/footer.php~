@@ -1,0 +1,14 @@
+        </section><!-- /.content -->
+      </div><!-- /.content-wrapper -->
+<?php
+  $profile = $this->db->get('profile')->row();
+?>
+      <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+          Halaman ini dimuat dalam {elapsed_time} detik, Penggunaan memory {memory_usage}
+        </div>
+        <strong>Copyright &copy; <?=date("Y")?> <a href="#"><?=$profile->nama_aplikasi?></a>.</strong> All rights reserved.
+      </footer>
+    </div><!-- ./wrapper -->
+  </body>
+</html>
